@@ -34,7 +34,236 @@
     font-weight: 400;
     font-style: bold;
 }
+
+/* PopUp */
+
+.popup {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+}
+
+.popup .popup-content{
+    margin: 240px auto 0 auto;
+    width: 390px;
+    height: 620px;
+    padding: 54px 30px;
+    background-color: #ffffff;
+}
+
+.popup-title {
+    text-align: center;
+    font-family: "OpenSans-Bold", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.popup-title::after {
+    content: "";
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 28px;
+    width: 67px;
+    height: 3px;
+    background: #b59f5b;
+}
   
+.select {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+    border: none;
+    background-color: #f4f7f6;
+    font-size: 13px;
+    font-family: "OpenSans-Regular",sans-serif;
+    color: #9b9c9c;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(../svg/form-arrows.svg);
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+  }
+  
+  .select:focus {
+    outline: 2px solid #b59f5b;
+    outline-offset: 2px;
+  }
+
+  .select-form {
+    font-family: "OpenSans-Regular";
+    font-size: 13px;
+    color: #000000;
+  }
+  
+  .radio-text {
+    margin-top: 33px;
+  }
+
+  .popup-hidden {
+      display: none;
+  }
+
+/* */
+
+.radio-form-group {
+    display: block;
+    padding-right: 25%;
+    margin-top: 34px;
+}
+
+.radio-form-group:nth-child(n+2) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.form-radio {
+    margin-top: 13px;
+	margin-bottom: 10px;
+}
+
+.form-radio input[type=radio] {
+	display: none;
+}
+
+.form-radio label {
+	cursor: pointer;
+	position: relative;
+	padding-left: 20px;
+	margin-right: 16px;
+	line-height: 18px;
+}
+
+.form-radio label:before {
+	content: "";
+	width: 17px;
+	height: 18px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background-image: url(../svg/form-empty-circle.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+}
+ 
+.form-radio input[type=radio]:checked + label:before {
+	background-image: url(../svg/form-circle.svg);
+}
+ 
+
+/* */
+
+  .text-form-group {
+      margin-top: 35px;
+  }
+
+  .field-textarea {
+      width: 100%;
+      height: 120px;
+      display: inline-block;
+      box-sizing: border-box;
+      margin-top: 12px;
+      padding-left: 20px;
+      padding-top: 20px;
+      border: none;
+      background-color: #f4f7f6;
+      font-size: 13px;
+      font-family: "OpenSans-Regular",sans-serif;
+      color: #9b9c9c;
+      resize: none;
+  }
+
+  .field-textarea:focus {
+    outline: 2px solid #b59f5b;
+    outline-offset: 2px;
+  }
+
+  .field-group {
+    font-size: 13px;
+    font-family: "OpenSans-Regular",sans-serif;
+    color: #000000;
+  }
+
+  .popup-button {
+    margin-top: 27px;
+    margin-bottom: 55px;
+    height: 48px;
+    border: 0;
+    width: 100%;
+    background-color: #b59f5b;
+    font-family: "OpenSans-Bold", sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 13px;
+  }
+
+  .popup-exit-button {
+    border: 0;
+    height: 18px;
+    width: 18px;
+    background-image: url(../svg/form-x.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    margin-left: 345px;
+    margin-top: -640px;
+  }
+
+  @media (max-width: 1200px) {
+
+    .popup .popup-content {
+        margin: 240px auto 0 auto;
+    }
+
+    .popup-exit-button {
+        height: 22px;
+        width: 22px;
+        background-size: 22px;
+        margin-left: 338px;
+        margin-top: -650px;
+      }
+
+  }
+
+  @media (max-width: 640px) and (orientation: portrait) {
+
+    .popup .popup-content{
+        margin: 55px auto 0 auto;
+        width: 330px;
+        height: 565px;
+        padding: 28px 23px;
+        background-color: #ffffff;
+    }
+
+    .radio-form-group {
+        display: block;
+        padding-right: 20%;
+        margin-top: 34px;
+    }
+
+    .popup-exit-button {
+        height: 26px;
+        width: 26px;
+        background-size: 26px;
+        margin-left: 281px;
+        margin-top: -625px;
+      }
+
+  }
+
     /* header */
   
 .header {
