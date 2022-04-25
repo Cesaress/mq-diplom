@@ -647,8 +647,7 @@ ul {
 }
 
 .tag-link,
-.theme-link,
-.copyright-section {
+.theme-link {
   text-decoration: none;
   color: #000000;
 }
