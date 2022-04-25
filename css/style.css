@@ -269,10 +269,6 @@ ul {
   text-decoration: none;
 }
 
-.header-link:hover {
-  text-decoration: underline;
-}
-
 .header {
   position: relative;
   background-image: url(../images/banner-bg.jpg);
@@ -685,7 +681,7 @@ ul {
   vertical-align: super;
   color: #b59f5b;
   font-size: 12px;
-  margin-left: 7px;
+  margin-left: 5px;
 }
 
 /* products */
@@ -836,7 +832,13 @@ ul {
 }
 
 .copyright-section {
+  display: block;
+  margin-top: 70px;
+  text-decoration: none;
+  color: #999999;
+  font-family: "OpenSans-Bold", sans-serif;
   font-size: 12px;
+  text-align: center;
 }
 
 /* media */
